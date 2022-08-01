@@ -149,6 +149,7 @@
     <ClCompile Include="histogram.cpp" />
     <ClCompile Include="hough.cpp" />
     <ClCompile Include="image.cpp" />
+    <ClCompile Include="keypoints.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mat_demo.cpp" />
     <ClCompile Include="operator_test.cpp" />
@@ -167,6 +168,7 @@
     <ClInclude Include="histogram.hpp" />
     <ClInclude Include="hough.hpp" />
     <ClInclude Include="image.hpp" />
+    <ClInclude Include="keypoints.hpp" />
     <ClInclude Include="operator_test.hpp" />
     <ClInclude Include="transform.hpp" />
     <ClInclude Include="utils.hpp" />
