@@ -21,7 +21,8 @@ namespace car_detect {
 		/*double wait = 1000.f / fps;
 		cout << "wait:" << wait << endl;*/
 		cv::Mat src, frame, gray, blur, mask, erode, dilate, close, dst;
-		cv::Ptr<cv::BackgroundSubtractorMOG2> bgm2 = cv::createBackgroundSubtractorMOG2();
+		//cv::Ptr<cv::BackgroundSubtractorMOG2> bgs = cv::createBackgroundSubtractorMOG2();
+		auto bgs = cv::createBackgroundSubtractorKNN();
 		cv::Mat kernel = cv::getStructuringElement(cv::MorphShapes::MORPH_RECT, cv::Size(5, 5));//腐蚀、膨胀操作的卷积核
 		//uchar min_height = 100, min_width = 110;
 		uchar min_height = 50, min_width = 55;
@@ -42,7 +43,7 @@ namespace car_detect {
 			cv::cvtColor(frame, gray, cv::COLOR_BGR2GRAY);
 			cv::GaussianBlur(gray, blur, cv::Size(3, 3), 5);//说明：噪声点比较小，所以用3 x 3的核，可以多试试，包括后面的sigmaX						
 			//去除背景
-			bgm2->apply(blur, mask);
+			bgs->apply(blur, mask);
 			//腐蚀，去除细小噪声
 			cv::erode(mask, erode, kernel);
 			//膨胀，放大“还原”
