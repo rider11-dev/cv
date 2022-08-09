@@ -17,7 +17,8 @@
 //#include "bgr_extract.hpp"
 //#include "operator_test.hpp"
 //#include "bgr_extract.hpp"
-#include "keypoints.hpp"
+//#include "keypoints.hpp"
+#include "trace.hpp"
 
 using namespace std;
 using namespace cv::utils;
@@ -42,7 +43,8 @@ int main(int argc, char** argv)
 	//test::bgr_extract::bgr_extract_test(argc, argv);
 	//test::operator_test::test(argc, argv);
 	//test::contours::contours_test(argc, argv);
-	test::keypoints::keypoints_test(argc, argv);
+	//test::keypoints::keypoints_test(argc, argv);
+	test::trace::trace_test(argc, argv);
 
 	cout << endl;//为了刷新输出重定向缓冲区，避免写入文件后不完整
 	return 0;

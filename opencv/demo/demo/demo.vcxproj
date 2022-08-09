@@ -153,6 +153,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mat_demo.cpp" />
     <ClCompile Include="operator_test.cpp" />
+    <ClCompile Include="trace.cpp" />
     <ClCompile Include="transform.cpp" />
     <ClCompile Include="utils.cpp" />
     <ClCompile Include="video.cpp" />
@@ -170,6 +171,7 @@
     <ClInclude Include="image.hpp" />
     <ClInclude Include="keypoints.hpp" />
     <ClInclude Include="operator_test.hpp" />
+    <ClInclude Include="trace.hpp" />
     <ClInclude Include="transform.hpp" />
     <ClInclude Include="utils.hpp" />
     <ClInclude Include="video.hpp" />
