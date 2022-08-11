@@ -142,6 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="bgr_extract.cpp" />
+    <ClCompile Include="camera_calibration.cpp" />
     <ClCompile Include="contours.cpp" />
     <ClCompile Include="dft.cpp" />
     <ClCompile Include="fileopt.cpp" />
@@ -162,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bgr_extract.hpp" />
+    <ClInclude Include="camera_calibration.hpp" />
     <ClInclude Include="contours.hpp" />
     <ClInclude Include="dft.hpp" />
     <ClInclude Include="fileopt.hpp" />

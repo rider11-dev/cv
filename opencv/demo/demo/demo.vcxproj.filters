@@ -75,6 +75,9 @@
     <ClCompile Include="trace.cpp">
       <Filter>源文件\test</Filter>
     </ClCompile>
+    <ClCompile Include="camera_calibration.cpp">
+      <Filter>源文件\test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="image.hpp">
@@ -120,6 +123,9 @@
       <Filter>头文件\test</Filter>
     </ClInclude>
     <ClInclude Include="trace.hpp">
+      <Filter>头文件\test</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_calibration.hpp">
       <Filter>头文件\test</Filter>
     </ClInclude>
   </ItemGroup>
