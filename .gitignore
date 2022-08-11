@@ -2,3 +2,5 @@
 /opencv/demo/.vs
 /opencv/demo/demo/x64
 /opencv/demo/car_detect/x64
+/opencv/samples/opencv_samples_cpp/.vs
+/opencv/samples/opencv_samples_cpp/x64
