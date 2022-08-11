@@ -154,7 +154,5 @@ namespace test {
 				}
 			}
 		}
-		cv::Ptr<cv::SIFT> sift = cv::SIFT::create();
-		sift->detect()
 	}
 }
