@@ -54,7 +54,7 @@ namespace test {
 				//find the board
 				vector<cv::Point2f> corners;
 				bool foundAll = cv::findChessboardCorners(image, board_sz, corners);
-
+				cout << "foundAll=" << foundAll << ",corners=" << corners.size() << "/" << n_boards << endl;
 				//draw
 				cv::drawChessboardCorners(image, board_sz, corners, foundAll);
 
@@ -77,7 +77,7 @@ namespace test {
 						" of " << n_boards << " needed chessboard images\n" << endl;
 				}
 				cv::imshow("calibration", image);//show in color if we did collect the image
-				if ((cv::waitKey(30) & 255) == 27) {
+				if ((cv::waitKey(10) & 255) == 27) {
 					return;
 				}
 			}
